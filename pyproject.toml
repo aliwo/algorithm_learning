@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "algorithm-learning"
+version = "0.1.0"
+description = ""
+authors = ["정승원(SeungWon Jeong)/OnC <seungwon.jeong@wesang.com>"]
+readme = "README.md"
+packages = [{include = "algorithm_learning"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
