@@ -12,9 +12,10 @@ class Solution:
         if len(nums) == 3:
             return max(nums[1], nums[0] + nums[2])
 
-        memo = [nums[0], nums[1], nums[0] + nums[2]]
+        memo = [0] * len(nums)
+        memo[0], memo[1], memo[2] = nums[0], nums[1], nums[0] + nums[2]
 
         for i, house in enumerate(nums[3:], start=3):
-            memo.append(max(memo[i - 2], memo[i - 3]) + house)
+            memo[i] = (max(memo[i - 2], memo[i - 3]) + house)
 
         return max(memo[-3:])
