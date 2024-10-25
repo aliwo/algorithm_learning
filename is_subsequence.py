@@ -1,5 +1,8 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
+        """
+        https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75
+        """
         i = 0
         s_i = 0
         while i < len(t):
