@@ -19,3 +19,7 @@ class Solution:
 
 
 # 와 m = 23, n = 12 에서 Memory Limit Exceeded 터진다... 이거 queue 를 안 쓰고 해야되는거여???
+
+# print(Solution().uniquePaths(2, 3))  # 3
+# print(Solution().uniquePaths(3, 3))  # 6
+print(Solution().uniquePaths(23, 12))  # 6
